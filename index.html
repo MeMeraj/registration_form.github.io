@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+	<form id="registration-form" onsubmit="handleSubmit(event)">
+        <h1>Registration Form</h1>
+		<div class="box">
+			<label for="name">Name: </label>
+			<input type="text" id="name" name="name" required>
+		</div>
+        <div class="box">
+            <label for="gender">gender:</label>
+			<div class="gen">
+				<input type="radio" id="gender" name="gender" required>male
+				<input type="radio" id="gender" name="gender" required>female
+
+			</div>
+        </div>
+		<div class="box">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+		</div>
+<div class="box">
+	<label for="password">Password:</label>
+	<input type="password" id="password" name="password" minlength="8" required>
+
+</div>
+
+		<input type="submit" value="Register">
+	</form>
+
+	<div id="output">
+		<h2>Registration Details:</h2>
+		<p>Name: <span id="output-name"></span></p>
+		<p>Email: <span id="output-email"></span></p>
+		<p>Password: <span id="output-password"></span></p>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
